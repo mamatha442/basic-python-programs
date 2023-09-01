@@ -1,0 +1,99 @@
+# write a program in python to print helloworld#
+print("HELLO WORLD")
+
+# write a python program to print number entered by the user
+n = int(input("enter a number: "))
+print("you entered",n)
+print(n)
+
+# to print sum of two numbers
+a = int(input("please enter the first number: "))
+b = int(input("please enter the second number: "))
+sum = complex(a) + complex(b)
+print('sum of {0} and {1} is {2}'.format(a,b,sum))
+print(a + b)
+print(sum)
+
+# converting a string to long integer
+age = 20
+print(age)
+int_age = int(age)
+print(int_age)
+
+# third angle of a traingle if two angles are given
+a = float(input("please enter a first angle: "))
+b = float(input("please enter a second angle: "))
+c = 180 - (a + b)
+print("third angle is : ", c)
+
+# radius of the circle
+from math import pi
+r = float(input("enter the radius of the circle: "))
+print("the area of the circle is: ", str(pi * r**2))
+
+# to print calendar of a given month and year
+import calendar
+y = int(input("input the year: "))
+m = int(input("input the month: "))
+print(calendar.month(y,m))
+
+# volume of a sphere
+pi = 3.14
+r = 6
+v = 4/3*pi*r**3
+print("the volume of a sphere: ",v)
+
+# area of a traingle
+
+b = int(input("enter the number: "))
+h = int(input("enter the number: "))
+a = b*h/2
+print("the area of a traingle: ",a)
+
+# avaerage of two students
+english = float(input("please enter the english marks: "))
+maths = float(input("please enter the maths marks: "))
+physics = float(input("please enter the physics marks: "))
+chemistry = float(input("please enter the chemistry: "))
+hindi = float(input("please enter the hindi marks: "))
+total = english + maths + physics + chemistry + hindi
+average = total/5
+percentage = total/5 * 100
+print(total)
+print(average)
+print(percentage)
+
+# perimeter of a rectangle
+width = float(input("enter the width:"))
+height = float(input("enter the height:"))
+area = width * height
+perimeter = 2 * (width * height)
+print(area)
+print(perimeter)
+
+# compound interest
+def compound_interest(principal, rate, time):
+    result = principal * (pow((1 + rate / 100),time))
+    return result
+p = float(input("enter the principal:"))
+r = float(input("enter the interest rate:"))
+t = float(input("enter the time in years:"))
+amount = compound_interest(p, r, t)
+interest = amount - p
+print(amount)
+print(interest)
+
+# given number is positive or negative
+num = float(input("enter a number: "))
+if num > 0:
+    print("positive number")
+elif num == 0:
+    print("zero")
+else:
+    print("negative number")
+
+
+
+
+
+
